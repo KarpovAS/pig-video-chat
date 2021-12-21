@@ -25,12 +25,10 @@ mongoose.connect('mongodb+srv://admin:1234@cluster0.1prho.mongodb.net/pig-video-
   console.log("Database connection ", err)
 })
 
+
+
+
 app.get('/', function(req,res){
-  res.render('index');
-});
-
-
-app.get('/main', function(req,res){
   res.render('main');
 });
 
