@@ -21,7 +21,7 @@ const peerServer = ExpressPeerServer(server, {
 app.use("/peerjs", peerServer);
 app.use(express.static("public"));
 
-mongoose.connect('mongodb+srv://admin:1234@cluster0.1prho.mongodb.net/pig-video-chat?retryWrites=true&w=majority', (err) => {
+mongoose.connect('mongodb+srv://admin:1234@cluster0.1prho.mongodb.net/pig-chat?retryWrites=true&w=majority', (err) => {
   console.log("Database connection ", err)
 })
 
